@@ -176,10 +176,10 @@ export const IntroductionSection = (): JSX.Element => {
                 >
                   <div className="text-center space-y-4">
                     <div className="relative mx-auto w-16 h-16">
-                      <div className="w-full h-full bg-gradient-to-br from-blue-500 to-purple-500 rounded-2xl p-4">
+                      <div className="w-full h-full bg-gradient-to-br from-amber-500 to-orange-500 rounded-2xl p-4">
                         <step.icon className="w-full h-full text-white" />
                       </div>
-                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full flex items-center justify-center text-xs font-bold text-white">
+                      <div className="absolute -top-2 -right-2 w-6 h-6 bg-gradient-to-r from-amber-400 to-orange-400 rounded-full flex items-center justify-center text-xs font-bold text-white">
                         {index + 1}
                       </div>
                     </div>
@@ -191,7 +191,7 @@ export const IntroductionSection = (): JSX.Element => {
                   
                   {/* Connector Line */}
                   {index < 3 && (
-                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-blue-500/50 to-purple-500/50 transform -translate-x-8" />
+                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-amber-500/50 to-orange-500/50 transform -translate-x-8" />
                   )}
                 </motion.div>
               ))}

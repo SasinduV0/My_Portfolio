@@ -142,7 +142,7 @@ export const ServicesSection = (): JSX.Element => {
                 onClick={() => setSelectedCategory(category)}
                 className={`px-6 py-3 rounded-full transition-all duration-300 ${
                   selectedCategory === category
-                    ? "bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-lg shadow-blue-500/25"
+                    ? "bg-gradient-to-r from-amber-600 to-orange-600 text-white shadow-lg shadow-amber-500/25"
                     : "bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white"
                 }`}
               >
@@ -213,7 +213,7 @@ export const ServicesSection = (): JSX.Element => {
 
                       {/* Featured Badge */}
                       {project.featured && (
-                        <div className="absolute top-4 left-4 px-3 py-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full text-xs font-semibold text-white">
+                        <div className="absolute top-4 left-4 px-3 py-1 bg-gradient-to-r from-amber-500 to-orange-500 rounded-full text-xs font-semibold text-white">
                           Featured
                         </div>
                       )}
@@ -298,7 +298,7 @@ export const ServicesSection = (): JSX.Element => {
                             {project.category}
                           </span>
                           {project.featured && (
-                            <span className="px-3 py-1 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full text-sm font-semibold">
+                            <span className="px-3 py-1 bg-gradient-to-r from-amber-500 to-orange-500 text-white rounded-full text-sm font-semibold">
                               Featured
                             </span>
                           )}

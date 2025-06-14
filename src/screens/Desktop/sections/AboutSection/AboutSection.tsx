@@ -64,9 +64,9 @@ export const AboutSection = (): JSX.Element => {
           <motion.div variants={itemVariants} className="relative">
             <div className="relative max-w-md mx-auto lg:mx-0">
               {/* Decorative Elements */}
-              <div className="absolute -inset-4 bg-gradient-to-r from-blue-500/20 to-purple-500/20 rounded-3xl blur-xl" />
-              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-full blur-lg" />
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-full blur-lg" />
+              <div className="absolute -inset-4 bg-gradient-to-r from-amber-500/20 to-orange-500/20 rounded-3xl blur-xl" />
+              <div className="absolute -top-6 -right-6 w-24 h-24 bg-gradient-to-br from-amber-500/30 to-orange-500/30 rounded-full blur-lg" />
+              <div className="absolute -bottom-6 -left-6 w-32 h-32 bg-gradient-to-br from-orange-500/20 to-amber-500/20 rounded-full blur-lg" />
               
               {/* Main Image Container */}
               <div className="relative card-modern overflow-hidden">
@@ -101,16 +101,18 @@ export const AboutSection = (): JSX.Element => {
                 <span className="gradient-text">Me</span>
               </h2>
               
-              <p className="text-xl text-blue-400 font-medium">
-                UX/UI Designer & Frontend Developer
+              <p className="text-xl text-amber-400 font-medium">
+                Concept artist & Front-end developer
               </p>
             </div>
 
             <div className="space-y-6 text-gray-300 leading-relaxed">
               <p className="text-lg">
-                I'm a passionate designer and developer who believes in creating digital experiences 
-                that not only look beautiful but also solve real problems. With over 5 years of experience, 
-                I've helped businesses transform their ideas into engaging digital products.
+                I'm a university student with over 5 years of experience in the creative arts, 
+                including concept art, digital illustration, and 3D design. 
+                Recently, I’ve expanded my passion for visual storytelling into the 
+                world of front-end development, where I aim to craft visually engaging and 
+                user-friendly digital experiences that blend creativity with functionality.
               </p>
               
               <p className="text-lg">
@@ -140,7 +142,7 @@ export const AboutSection = (): JSX.Element => {
                           initial={{ width: 0 }}
                           whileInView={{ width: `${skill.level}%` }}
                           transition={{ delay: index * 0.1 + 0.3, duration: 1 }}
-                          className="bg-gradient-to-r from-blue-500 to-purple-500 h-1.5 rounded-full"
+                          className="bg-gradient-to-r from-amber-500 to-orange-500 h-1.5 rounded-full"
                         />
                       </div>
                     </div>

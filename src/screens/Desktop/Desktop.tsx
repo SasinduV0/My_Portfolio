@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "../../components/ui/button";
 import {
@@ -23,7 +23,8 @@ import {
   Menu, 
   X,
   ChevronDown,
-  ArrowRight
+  ArrowRight,
+  Facebook
 } from "lucide-react";
 
 export const Desktop = (): JSX.Element => {
@@ -41,15 +42,17 @@ export const Desktop = (): JSX.Element => {
 
   // Social media links with modern icons
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: Github, href: "https://github.com/SasinduV0", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/sasindu-dissanayake-bb794b305/", label: "LinkedIn" },
+    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Mail, href: "mailto:22IT0470@itum.mrt.ac.lk", label: "Email" },
   ];
 
   // Animated role texts
   const roleTexts = [
-    "UX/UI Designer",
+    "Concept artist",
+    "Illustrator",
+    "3D Artist",
     "Frontend Developer",
     "Creative Thinker",
     "Problem Solver"
@@ -73,12 +76,12 @@ export const Desktop = (): JSX.Element => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-dark-950 via-dark-900 to-dark-800 relative overflow-hidden">
+    <div className="min-h-screen bg-gradient-to-br from-black via-zinc-950 to-zinc-900 relative overflow-hidden">
       {/* Floating Background Elements */}
       <FloatingElements />
       
       {/* Background Mesh Gradient */}
-      <div className="fixed inset-0 bg-mesh opacity-30 pointer-events-none" />
+      <div className="fixed inset-0 bg-[radial-gradient(ellipse_at_center,rgba(255,165,0,0.05),transparent)] opacity-30 pointer-events-none" />
 
       <div className="relative z-10 w-full max-w-7xl mx-auto">
         {/* Modern Header/Navigation */}
@@ -100,10 +103,10 @@ export const Desktop = (): JSX.Element => {
                 whileTap={{ scale: 0.95 }}
                 className="relative"
               >
-                <div className="text-2xl lg:text-3xl font-bold gradient-text font-display">
-                  H M
+                <div className="text-2xl lg:text-3xl font-bold text-orange-500 gradient-text font-display">
+                  S P
                 </div>
-                <div className="absolute -inset-2 bg-gradient-to-r from-blue-600/20 to-purple-600/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute -inset-2 bg-gradient-to-r from-amber-600/20 to-orange-600/20 rounded-lg blur opacity-0 group-hover:opacity-100 transition-opacity" />
               </motion.div>
 
               {/* Desktop Navigation */}
@@ -145,7 +148,7 @@ export const Desktop = (): JSX.Element => {
                   <button
                     key={index}
                     onClick={() => scrollToSection(item.href)}
-                    className="block w-full text-left px-4 py-2 text-white hover:text-blue-400 transition-colors"
+                    className="block w-full text-left px-4 py-2 text-white hover:text-amber-400 transition-colors"
                   >
                     {item.text}
                   </button>
@@ -171,7 +174,7 @@ export const Desktop = (): JSX.Element => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.6, delay: 0.4 }}
-                    className="text-lg lg:text-xl text-blue-400 font-medium"
+                    className="text-lg lg:text-xl text-amber-400 font-medium"
                   >
                     Hello, I'm
                   </motion.p>
@@ -182,9 +185,9 @@ export const Desktop = (): JSX.Element => {
                     transition={{ duration: 0.6, delay: 0.6 }}
                     className="text-4xl sm:text-5xl lg:text-7xl font-bold text-white font-display leading-tight"
                   >
-                    Hossam
+                    Sasindu
                     <br />
-                    <span className="gradient-text">Mohamed</span>
+                    <span className="gradient-text">Poornima</span>
                   </motion.h1>
 
                   <motion.div
@@ -230,7 +233,7 @@ export const Desktop = (): JSX.Element => {
                       className="p-3 glass-effect rounded-xl hover:bg-white/20 transition-all duration-300 group"
                       aria-label={social.label}
                     >
-                      <social.icon className="w-5 h-5 text-gray-300 group-hover:text-blue-400 transition-colors" />
+                      <social.icon className="w-5 h-5 text-gray-300 group-hover:text-amber-400 transition-colors" />
                     </motion.a>
                   ))}
                 </motion.div>
@@ -271,7 +274,7 @@ export const Desktop = (): JSX.Element => {
                     transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                     className="absolute inset-0 w-80 h-80 lg:w-96 lg:h-96"
                   >
-                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500/20 to-purple-500/20 blur-xl" />
+                    <div className="absolute inset-0 rounded-full bg-gradient-to-r from-amber-500/20 to-orange-500/20 blur-xl" />
                   </motion.div>
                   
                   <motion.div
@@ -279,15 +282,15 @@ export const Desktop = (): JSX.Element => {
                     transition={{ duration: 25, repeat: Infinity, ease: "linear" }}
                     className="absolute inset-4 w-72 h-72 lg:w-88 lg:h-88"
                   >
-                    <div className="absolute inset-0 rounded-full border-2 border-gradient-to-r from-blue-400/30 to-purple-400/30" />
+                    <div className="absolute inset-0 rounded-full border-2 border-gradient-to-r from-amber-400/30 to-orange-400/30" />
                   </motion.div>
 
                   {/* Profile Image Container */}
                   <div className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full overflow-hidden glass-effect glow-effect">
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-purple-500/20" />
+                    <div className="absolute inset-0 bg-gradient-to-br from-amber-500/20 to-orange-500/20" />
                     <img
                       src="/mask-group.png"
-                      alt="Hossam Mohamed"
+                      alt="Sasindu Poornima"
                       className="w-full h-full object-cover scale-110"
                     />
                   </div>
@@ -308,7 +311,7 @@ export const Desktop = (): JSX.Element => {
                 className="flex flex-col items-center gap-2 text-gray-400 cursor-pointer"
                 onClick={() => scrollToSection('#about')}
               >
-                <span className="text-sm font-medium">Scroll Down</span>
+                <span className="text-sm font-medium">Scroll Up</span>
                 <ChevronDown className="w-5 h-5" />
               </motion.div>
             </motion.div>

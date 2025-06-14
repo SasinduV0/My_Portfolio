@@ -29,20 +29,20 @@ export const ContactSection = (): JSX.Element => {
     {
       icon: Mail,
       label: "Email",
-      value: "hello@hossammohamed.com",
-      href: "mailto:hello@hossammohamed.com"
+      value: "22IT0470@itum.mrt.ac.lk",
+      href: "mailto:22IT0470@itum.mrt.ac.lk"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567"
+      value: "+94 775473112",
+      href: "tel:+94775473112"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "New York, NY",
-      href: "#"
+      value: "ITUM, Diyagama",
+      href: "https://maps.app.goo.gl/F7xoXeGZV8c3Cu2f6"
     },
     {
       icon: Clock,
@@ -136,7 +136,7 @@ export const ContactSection = (): JSX.Element => {
                 whileHover={{ x: 10, scale: 1.02 }}
                 className="flex items-center gap-4 p-4 glass-effect rounded-xl hover:bg-white/10 transition-all duration-300 group"
               >
-                <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-purple-500 rounded-xl p-3 group-hover:scale-110 transition-transform">
+                <div className="w-12 h-12 bg-gradient-to-br from-amber-500 to-orange-500 rounded-xl p-3 group-hover:scale-110 transition-transform">
                   <info.icon className="w-full h-full text-white" />
                 </div>
                 <div>
@@ -177,7 +177,7 @@ export const ContactSection = (): JSX.Element => {
                   value={formData.firstName}
                   onChange={handleInputChange}
                   required
-                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20 h-12"
+                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-amber-500 focus:ring-amber-500/20 h-12"
                   placeholder="John"
                 />
               </div>
@@ -191,7 +191,7 @@ export const ContactSection = (): JSX.Element => {
                   value={formData.lastName}
                   onChange={handleInputChange}
                   required
-                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20 h-12"
+                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-amber-500 focus:ring-amber-500/20 h-12"
                   placeholder="Doe"
                 />
               </div>
@@ -210,7 +210,7 @@ export const ContactSection = (): JSX.Element => {
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20 h-12"
+                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-amber-500 focus:ring-amber-500/20 h-12"
                   placeholder="john@example.com"
                 />
               </div>
@@ -224,7 +224,7 @@ export const ContactSection = (): JSX.Element => {
                   type="tel"
                   value={formData.phone}
                   onChange={handleInputChange}
-                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20 h-12"
+                  className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-amber-500 focus:ring-amber-500/20 h-12"
                   placeholder="+1 (555) 123-4567"
                 />
               </div>
@@ -242,7 +242,7 @@ export const ContactSection = (): JSX.Element => {
                 onChange={handleInputChange}
                 required
                 rows={6}
-                className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-blue-500 focus:ring-blue-500/20 resize-none"
+                className="bg-white/5 border-white/10 text-white placeholder:text-gray-400 focus:border-amber-500 focus:ring-amber-500/20 resize-none"
                 placeholder="Tell me about your project, goals, and how I can help you..."
               />
             </div>

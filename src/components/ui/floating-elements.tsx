@@ -16,7 +16,7 @@ export const FloatingElements: React.FC = () => {
       {elements.map((element, index) => (
         <motion.div
           key={index}
-          className={`absolute ${element.size} ${element.position} bg-gradient-to-r from-blue-400 to-purple-500 rounded-full opacity-20`}
+          className={`absolute ${element.size} ${element.position} bg-gradient-to-r from-yellow-400 to-orange-500 rounded-full opacity-20`}
           animate={{
             y: [0, -20, 0],
             x: [0, 10, 0],
