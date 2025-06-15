@@ -43,6 +43,20 @@ export const IntroductionSection = (): JSX.Element => {
       description: "Full-stack web development solutions from concept to deployment with modern frameworks.",
       features: ["Full-Stack Development", "API Integration", "Database Design", "Cloud Deployment"],
       color: "from-orange-500 to-red-500"
+    },
+    {
+      icon: Globe,
+      title: "3D Design",
+      description: "Creating stunning 3D models, animations, and visualizations using industry-standard tools and techniques.",
+      features: ["Blender", "Houdini", "Maya", "ZBrush"],
+      color: "from-emerald-500 to-teal-500"
+    },
+    {
+      icon: Palette,
+      title: "Concept Art",
+      description: "Creating captivating concept art and digital illustrations for games, films, and other creative projects.",
+      features: ["Krita", "Photoshop", "Digital Painting", "Character Design"],
+      color: "from-rose-500 to-pink-500"
     }
   ];
 
@@ -191,7 +205,7 @@ export const IntroductionSection = (): JSX.Element => {
                   
                   {/* Connector Line */}
                   {index < 3 && (
-                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-amber-500/50 to-orange-500/50 transform -translate-x-8" />
+                    <div className="hidden md:block absolute top-8 left-full w-full h-0.5 bg-gradient-to-r from-amber-500/50 to-orange-500/50 transform -translate-x-1/2" />
                   )}
                 </motion.div>
               ))}

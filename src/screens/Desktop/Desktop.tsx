@@ -14,6 +14,7 @@ import { AboutSection } from "./sections/AboutSection/AboutSection";
 import { ContactSection } from "./sections/ContactSection";
 import { IntroductionSection } from "./sections/IntroductionSection";
 import { ServicesSection } from "./sections/ServicesSection";
+import { WorkSection } from "./sections/WorkSection";
 import { 
   Github, 
   Linkedin, 
@@ -37,6 +38,7 @@ export const Desktop = (): JSX.Element => {
     { text: "About", href: "#about" },
     { text: "Services", href: "#services" },
     { text: "Portfolio", href: "#portfolio" },
+    { text: "Work", href: "#work" },
     { text: "Contact", href: "#contact" },
   ];
 
@@ -334,6 +336,12 @@ export const Desktop = (): JSX.Element => {
         <ScrollReveal direction="up" delay={0.2}>
           <section id="portfolio">
             <ServicesSection />
+          </section>
+        </ScrollReveal>
+
+        <ScrollReveal direction="up" delay={0.2}>
+          <section id="work">
+            <WorkSection />
           </section>
         </ScrollReveal>
 
