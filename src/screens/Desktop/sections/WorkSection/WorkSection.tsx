@@ -29,7 +29,7 @@ export const WorkSection = (): JSX.Element => {
     // 3D Renders with variants
     {
       id: "3d-1",
-      title: "3D Architectural Visualization",
+      title: "3D Anvil practice - Blender Guru",
       type: "image",
       defaultSrc: "/work/3D Render 1 varient 1.jpg",
       hoverSrc: "/work/3D Render 1 varient 2.jpg",
@@ -37,7 +37,7 @@ export const WorkSection = (): JSX.Element => {
     },
     {
       id: "3d-2",
-      title: "3D Environment Design",
+      title: "3D Donut practice - Blender Guru",
       type: "image",
       defaultSrc: "/work/3D Render 2 varient 1.jpg",
       hoverSrc: "/work/3D Render 2 varient 2.jpg",
@@ -45,7 +45,7 @@ export const WorkSection = (): JSX.Element => {
     },
     {
       id: "3d-animation",
-      title: "3D Animation",
+      title: "3D Donut Animation",
       type: "video",
       defaultSrc: "/work/3D Animation.mp4",
       category: "3D Art"
@@ -71,10 +71,10 @@ export const WorkSection = (): JSX.Element => {
       id: "digital-dragon-slides",
       title: "Dragon Series",
       type: "slideshow",
-      defaultSrc: "/work/Dark digital painting Dragon 2.jpg",
+      defaultSrc: "/work/dark digital slide/Dark digital painting Dragon 2.jpg",
       slideImages: [
-        "/work/Dark digital painting Dragon 2.jpg",
-        "/work/Dark digital painting Dragon 3.jpg"
+        "/work/dark digital slide/Dark digital painting Dragon 2.jpg",
+        "/work/dark digital slide/Dark digital painting Dragon 3.jpg"
       ],
       category: "Digital Paintings"
     },
@@ -94,10 +94,12 @@ export const WorkSection = (): JSX.Element => {
       hoverSrc: "/work/Digital painting portrait 1 varient 2.jpg",
       category: "Digital Paintings"
     },
-    {      id: "digital-portrait-2",
+    {      
+      id: "digital-portrait-2",
       title: "Digital Portrait 2",
       type: "image",
-      defaultSrc: "/work/Digital painting portrait 2.jpg",
+      defaultSrc: "/work/Digital painting portrait 2 varient 1.png",
+      hoverSrc: "/work/Digital painting portrait 2 varient 2.jpg",
       category: "Digital Paintings"
     },
     {
@@ -122,13 +124,13 @@ export const WorkSection = (): JSX.Element => {
       id: "line-art",
       title: "Line Art Collection",
       type: "slideshow",
-      defaultSrc: "/work/Line art 1.jpg",
+      defaultSrc: "/work/line art slide/Line art 1.jpg",
       slideImages: [
-        "/work/Line art 1.jpg",
-        "/work/Line art 2.jpg",
-        "/work/Line art 3.jpg",
-        "/work/Line art 4.jpg",
-        "/work/Line art 5.jpg"
+        "/work/line art slide/Line art 1.jpg",
+        "/work/line art slide/Line art 2.jpg",
+        "/work/line art slide/Line art 3.jpg",
+        "/work/line art slide/Line art 4.jpg",
+        "/work/line art slide/Line art 5.jpg"
       ],
       category: "Line Art"
     },
@@ -137,12 +139,12 @@ export const WorkSection = (): JSX.Element => {
       id: "pencil-animals",
       title: "Animal Studies",
       type: "slideshow",
-      defaultSrc: "/work/Pencil Animals 1.jpg",
+      defaultSrc: "/work/pencil animal slide/Pencil Animals 1.jpg",
       slideImages: [
-        "/work/Pencil Animals 1.jpg",
-        "/work/Pencil Animals 2.jpg",
-        "/work/Pencil Animals 3.jpg",
-        "/work/Pencil Animals 4.jpg"
+        "/work/pencil animal slide/Pencil Animals 1.jpg",
+        "/work/pencil animal slide/Pencil Animals 2.jpg",
+        "/work/pencil animal slide/Pencil Animals 3.jpg",
+        "/work/pencil animal slide/Pencil Animals 4.jpg"
       ],
       category: "Traditional Art"
     },
@@ -150,11 +152,11 @@ export const WorkSection = (): JSX.Element => {
       id: "pencil-dark",
       title: "Dark Series",
       type: "slideshow",
-      defaultSrc: "/work/Pencil art dark 1.jpg",
+      defaultSrc: "/work/pencil dark slide/Pencil art dark 1.jpg",
       slideImages: [
-        "/work/Pencil art dark 1.jpg",
-        "/work/Pencil art dark 2.jpg",
-        "/work/Pencil art dark 3.jpg"
+        "/work/pencil dark slide/Pencil art dark 1.jpg",
+        "/work/pencil dark slide/Pencil art dark 2.jpg",
+        "/work/pencil dark slide/Pencil art dark 3.jpg"
       ],
       category: "Traditional Art"
     },
@@ -162,11 +164,11 @@ export const WorkSection = (): JSX.Element => {
       id: "pencil-portraits",
       title: "Portrait Studies",
       type: "slideshow",
-      defaultSrc: "/work/Pencil Portrait 1.jpg",
+      defaultSrc: "/work/pencil portrait slide/Pencil Portrait 1.jpg",
       slideImages: [
-        "/work/Pencil Portrait 1.jpg",
-        "/work/Pencil Portrait 2.jpg",
-        "/work/Pencil Portrait 3.jpg"
+        "/work/pencil portrait slide/Pencil Portrait 1.jpg",
+        "/work/pencil portrait slide/Pencil Portrait 2.jpg",
+        "/work/pencil portrait slide/Pencil Portrait 3.jpg"
       ],
       category: "Traditional Art"
     }
