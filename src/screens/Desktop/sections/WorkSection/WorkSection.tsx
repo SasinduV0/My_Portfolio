@@ -21,7 +21,7 @@ export const WorkSection = (): JSX.Element => {
     "All",
     "3D Art",
     "Digital Paintings",
-    "Line Art",
+    "Digital Portraits",
     "Traditional Art"
   ];
 
@@ -86,13 +86,14 @@ export const WorkSection = (): JSX.Element => {
       hoverSrc: "/work/Dark digital painting Monster varient 2.jpg",
       category: "Digital Paintings"
     },
+    //Digital portraits
     {
       id: "digital-portrait-1",
       title: "Digital Portrait",
       type: "image",
       defaultSrc: "/work/Digital painting portrait 1 varient 1 Transparent.png",
       hoverSrc: "/work/Digital painting portrait 1 varient 2.jpg",
-      category: "Digital Paintings"
+      category: "Digital Portraits"
     },
     {      
       id: "digital-portrait-2",
@@ -100,7 +101,7 @@ export const WorkSection = (): JSX.Element => {
       type: "image",
       defaultSrc: "/work/Digital painting portrait 2 varient 1.png",
       hoverSrc: "/work/Digital painting portrait 2 varient 2.jpg",
-      category: "Digital Paintings"
+      category: "Digital Portraits"
     },
     {
       id: "digital-portrait-3",
@@ -108,7 +109,7 @@ export const WorkSection = (): JSX.Element => {
       type: "image",
       defaultSrc: "/work/Digital painting portrait 3 varient 1.jpg",
       hoverSrc: "/work/Digital painting portrait 3 varient 2.jpg",
-      category: "Digital Paintings"
+      category: "Digital Portraits"
     },
     // Illustrator Work
     {
@@ -119,7 +120,7 @@ export const WorkSection = (): JSX.Element => {
       hoverSrc: "/work/Ilustrator cat varient 2.jpg",
       category: "Digital Paintings"
     },
-    // Line Art Series
+    // Traditional Art Series
     {
       id: "line-art",
       title: "Line Art Collection",
@@ -132,9 +133,8 @@ export const WorkSection = (): JSX.Element => {
         "/work/line art slide/Line art 4.jpg",
         "/work/line art slide/Line art 5.jpg"
       ],
-      category: "Line Art"
+      category: "Traditional Art"
     },
-    // Traditional Art Series
     {
       id: "pencil-animals",
       title: "Animal Studies",
@@ -194,8 +194,7 @@ export const WorkSection = (): JSX.Element => {
           }
         });
         return newSlides;
-      });
-    }, 2000);
+      });    }, 3000); // Changed to 3 seconds
 
     return () => clearInterval(slideInterval);
   }, []);
