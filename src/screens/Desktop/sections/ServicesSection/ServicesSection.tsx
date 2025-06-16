@@ -20,66 +20,33 @@ export const ServicesSection = (): JSX.Element => {
   const projects = [
     {
       id: 1,
-      title: "E-Commerce Platform",
+      title: "Project 1",
       category: "Web Design",
-      description: "A modern e-commerce platform with seamless user experience and advanced features.",
+      description: "A placeholder description for the first featured project. Replace with actual project details.",
       image: "/rectangle-81.svg",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["Technology 1", "Technology 2", "Technology 3"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
       id: 2,
-      title: "Music Streaming App",
-      category: "Mobile App",
-      description: "A beautiful music streaming application with intuitive design and smooth animations.",
-      image: "/rectangle-81-3.svg",
-      technologies: ["React Native", "Firebase", "Redux", "Spotify API"],
+      title: "Project 2",
+      category: "Development",
+      description: "A placeholder description for the second featured project. Replace with actual project details.",
+      image: "/rectangle-81-2.svg",
+      technologies: ["Technology 1", "Technology 2", "Technology 3"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
     },
     {
       id: 3,
-      title: "Creative Portfolio",
-      category: "Web Design",
-      description: "A stunning portfolio website showcasing creative work with modern animations.",
-      image: "/rectangle-81-2.svg",
-      technologies: ["Next.js", "Framer Motion", "Tailwind CSS", "Vercel"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 4,
-      title: "Task Management Tool",
-      category: "Development",
-      description: "A comprehensive task management application with team collaboration features.",
-      image: "/rectangle-81-1.svg",
-      technologies: ["Vue.js", "Express.js", "PostgreSQL", "Socket.io"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 5,
-      title: "Brand Identity System",
-      category: "Branding",
-      description: "Complete brand identity design including logo, colors, and brand guidelines.",
-      image: "/rectangle-81.svg",
-      technologies: ["Adobe Creative Suite", "Figma", "Brand Strategy"],
-      liveUrl: "#",
-      githubUrl: "#",
-      featured: false
-    },
-    {
-      id: 6,
-      title: "Restaurant App",
+      title: "Project 3",
       category: "Mobile App",
-      description: "A food delivery app with real-time tracking and seamless ordering experience.",
+      description: "A placeholder description for the third featured project. Replace with actual project details.",
       image: "/rectangle-81-3.svg",
-      technologies: ["Flutter", "Firebase", "Google Maps API", "Payment Gateway"],
+      technologies: ["Technology 1", "Technology 2", "Technology 3"],
       liveUrl: "#",
       githubUrl: "#",
       featured: true
@@ -162,7 +129,7 @@ export const ServicesSection = (): JSX.Element => {
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence mode="wait">
-            {filteredProjects.map((project, index) => (
+            {filteredProjects.map((project) => (
               <motion.div
                 key={project.id}
                 variants={itemVariants}
@@ -276,7 +243,7 @@ export const ServicesSection = (): JSX.Element => {
                 animate={{ scale: 1, opacity: 1 }}
                 exit={{ scale: 0.9, opacity: 0 }}
                 className="relative max-w-4xl w-full max-h-[90vh] overflow-y-auto card-modern"
-                onClick={(e) => e.stopPropagation()}
+                onClick={(e: React.MouseEvent) => e.stopPropagation()}
               >
                 <Button
                   className="absolute top-4 right-4 z-10 bg-white/20 hover:bg-white/30"

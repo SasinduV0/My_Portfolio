@@ -173,8 +173,11 @@ export const WorkSection = (): JSX.Element => {
       category: "Traditional Art"
     }
   ];
+  // Filter work items based on selected category and reset slides when category changes
+  useEffect(() => {
+    setCurrentSlides({}); // Reset slideshow states when category changes
+  }, [selectedCategory]);
 
-  // Filter work items based on selected category
   const filteredWorks = selectedCategory === "All" 
     ? workItems 
     : workItems.filter(item => item.category === selectedCategory);
@@ -258,14 +261,13 @@ export const WorkSection = (): JSX.Element => {
               </button>
             ))}
           </div>
-        </ScrollReveal>
-
-        {/* Gallery Grid */}
+        </ScrollReveal>        {/* Gallery Grid */}
         <motion.div
+          key={selectedCategory} // Add key to force remount when category changes
           variants={containerVariants}
           initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
+          animate="visible"
+          exit="hidden"
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
           <AnimatePresence mode="wait">
